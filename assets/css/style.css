@@ -1,0 +1,31 @@
+html {
+    padding: 0;
+    background: #FFCBB7;
+    background: linear-gradient(to bottom, #FAEACB, white);
+    font-family: "Open Sans Condensed Light";
+}
+
+h1 {
+    font-family: "Amatic SC";
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    margin-top: -20px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#center-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
