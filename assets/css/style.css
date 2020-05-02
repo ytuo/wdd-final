@@ -1,16 +1,44 @@
 html {
-    padding: 0;
     background: #FFCBB7;
     background: linear-gradient(to bottom, #FAEACB, white);
-    font-family: "Open Sans Condensed Light";
+    font-family: "Open Sans Condensed";
 }
 
 h1 {
     font-family: "Amatic SC";
+    color: black;
 }
 
 h2 {
+    font-size: 60px;
+    /* text-align: center; */
+    margin: 0px;
+    padding: 0px;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+h3 {
     text-align: center;
+    font-size: 70px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.about {
+    width: 300px;
+    font-size: 20px;
+    /* position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
 }
 
 header {
@@ -22,10 +50,215 @@ header {
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    /* align-items: center; */
 }
 
+#nav-items {
+    display: flex;
+    justify-content: space-between;
+}
 #center-menu {
+    position: absolute;
+    top: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.codebox span {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: default;
+}
+
+.codebox span:hover {
+    font-style: bold;
+    background-color: #9CC0E7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#public:hover {
+    font-weight:bold;
+}
+
+
+.lang-main {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    height: 70%;
+    /* transform: translateY(-20%); */
+}
+
+.progs {
+    width: 200px;
+    text-align: center; 
+}
+
+.progs-content {
+    font-size: 20px;
+}
+
+.codebox {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 5px;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px; */
+}
+
+.bottom-half {
+    width: 1000px;
+}
+
+.descrip {
+    display: none;
+    justify-content: center;
+    position: relative;
+}
+
+.java-descrip {
+    display: none;
+    justify-content: center;
+    position: relative;
+    margin-left: -100px;
+}
+
+
+.code-blk-exp {
+    width: 400px;
+    font-size: 20px;
+}
+
+.java-code-blk-exp {
+    width: 400px;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+.exp {
+    width: 500px;
+    font-size: 25px;
+}
+
+.java-exp {
+    margin-left: 150px;
+    width: 500px;
+    font-size: 25px;
+}
+
+
+#cln1-exp {
+
+}
+
+#cln2-4-exp {
+}
+
+#cln3-exp {
+    
+}
+
+#jln1-exp {
+
+}
+
+#jln2-exp {
+}
+
+#jln3-exp {
+    
+}
+
+
+
+#outer {
+    background-color: red;
+    /* position: relative; */
+    /* text-align: center; */
+    margin: auto;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.hello-loop span{
+    /* background-color: green; */
+    /* margin: 0px;
+    padding: 0px; */
+    position: absolute;
+	opacity: 0;
+	overflow: hidden;
+    color: #6b969d;
+    /* left: 50%;
+    transform: translateX(-50%); */
+	animation: loop 56s linear infinite 0s;
+}
+
+.hello-loop span:nth-child(2) { 
+	animation-delay: 7s; 
+	color: #6b889d;
+}
+.hello-loop span:nth-child(3) { 
+	animation-delay: 14s; 
+	color: #6b739d;	
+}
+.hello-loop span:nth-child(4) { 
+	animation-delay: 21s; 
+	color: #7a6b9d;
+}
+
+.hello-loop span:nth-child(5) { 
+	animation-delay: 28s; 
+	color: #8d6b9d;
+}
+
+.hello-loop span:nth-child(6) {  
+	animation-delay: 35s; 
+	color: #9b6b9d;
+}
+.hello-loop span:nth-child(7) {  
+	animation-delay: 42s; 
+	color: #9b6b9d;
+}
+.hello-loop span:nth-child(8) {  
+	animation-delay: 49s; 
+	color: #9b6b9d;
+}
+
+@keyframes loop {
+    0% { opacity: 0;  transform: translateY(-30px); }
+	2% { opacity: 1; transform: translateY(0px);}
+    11% { opacity: 1; transform: translateY(0px); }
+	13% { opacity: 0; transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.lang {
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.langnav {
+    font-size: 20px;
+    margin-right: 30px;
+    margin-left: -90px;
 }
